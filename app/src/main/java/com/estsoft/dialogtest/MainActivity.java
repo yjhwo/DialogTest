@@ -14,4 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void onButtonClick(View view){
+        Dialog dig = new Dialog(this);
+
+        dig.setContentView(R.layout.dialog_test);           // inflation
+        dig.setTitle("Dialog Test");
+
+        dig.show();
+
+    }
+
 }
